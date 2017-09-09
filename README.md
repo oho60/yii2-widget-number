@@ -1,8 +1,8 @@
 ```
 @common
  'components' => [
-	'Number'=>[
-    	'class'=>'common\widgets\Booster',
+	number'=>[
+    	'class'=>'oho60\number\NumberWidet',
     ],
 	}
 
@@ -35,4 +35,4 @@ Usage
 Once the extension is installed, simply use it in your code by  :
 
 ```php
-<?php echo Yii::$app->Number->bahtThai(number_format(1234, 2, '.', ''));?>```
+<?php echo Yii::$app->number->bahtThai(number_format(1234, 2, '.', ''));?>```
