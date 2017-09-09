@@ -1,6 +1,6 @@
 {
     "name": "oho60/yii2-widget-number",
-    "description": "ddd",
+    "description": "จำนวนเงินเป็นภาษาไทย",
     "type": "yii2-extension",
     "keywords": ["yii2","extension"],
     "license": "MIT",
