@@ -18,6 +18,10 @@ class Number extends \yii\bootstrap\Widget
         parent::init();
 
     }
+	 public function run()
+    {
+        return "Hello!";
+    }
     public function bahtThai($thb) {
   	 	list($thb, $ths) = explode('.', $thb);
    		$ths = substr($ths.'00', 0, 2);
