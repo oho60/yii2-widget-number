@@ -1,11 +1,13 @@
+```
 @common
  'components' => [
 	'Number'=>[
     	'class'=>'common\widgets\Booster',
     ],
 	}
+
+```	
 	
-	echo Yii::$app->Number->bahtThai(number_format(1234, 2, '.', ''));
 
 Installation
 ------------
@@ -33,4 +35,4 @@ Usage
 Once the extension is installed, simply use it in your code by  :
 
 ```php
-<?= \oho60\widgetNumber\AutoloadExample::widget(); ?>```
+<?php echo Yii::$app->Number->bahtThai(number_format(1234, 2, '.', ''));?>```
