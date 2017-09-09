@@ -23,7 +23,7 @@ composer require --prefer-dist oho60/yii2-widget-number "*"
 or add
 
 ```
-"oho/yii2-widget-number": "*"
+"oho60/yii2-widget-number": "*"
 ```
 
 to the require section of your `composer.json` file.
