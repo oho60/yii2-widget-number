@@ -17,7 +17,7 @@ The preferred way to install this extension is through [composer](http://getcomp
 Either run
 
 ```
-php composer.phar require --prefer-dist oho/yii2-widget-number "*"
+composer require --prefer-dist oho60/yii2-widget-number "*"
 ```
 
 or add
