@@ -6,7 +6,7 @@ namespace oho60\number;
  /* @common
  'components' => [
  'Number'=>[
-    				'class'=>'common\widgets\Booster',
+    				'class'=>'oho60\number\NumberWidet',
     		],
 			}
 			$string_n=Yii::$app->Number->bahtThai(number_format(1234, 2, '.', ''));
