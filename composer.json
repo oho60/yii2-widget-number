@@ -15,7 +15,7 @@
     },
     "autoload": {
         "psr-4": {
-            "oho60\\widgetNumber\\": ""
+            "oho60\\NumberWidget\\": ""
         }
     }
 }
