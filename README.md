@@ -1,12 +1,4 @@
-```
-@common
- 'components' => [
-	number'=>[
-    	'class'=>'oho60\number\NumberWidet',
-    ],
-	}
 
-```	
 	
 
 Installation
@@ -17,13 +9,13 @@ The preferred way to install this extension is through [composer](http://getcomp
 Either run
 
 ```
-composer require --prefer-dist oho60/yii2-widget-number "*"
+composer require --prefer-dist oho60/yii2-widget-number "dev-master"
 ```
 
 or add
 
 ```
-"oho60/yii2-widget-number": "*"
+"oho60/yii2-widget-number": "dev-master"
 ```
 
 to the require section of your `composer.json` file.
@@ -35,4 +27,6 @@ Usage
 Once the extension is installed, simply use it in your code by  :
 
 ```php
-<?php echo Yii::$app->number->bahtThai(number_format(1234, 2, '.', ''));?>```
+<?php echo \oho60\number\Number::widget(['type'=>'thaiBaht','number'=>'123']);?>
+ผลผลลัพธ์ หนึ่งร้อยยี่สิบสามบาทถ้วน
+```
