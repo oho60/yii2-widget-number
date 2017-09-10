@@ -27,6 +27,7 @@ Usage
 Once the extension is installed, simply use it in your code by  :
 
 ```php
-<?php echo \oho60\number\Number::widget(['type'=>'thaiBaht','number'=>'123']);?>
-ผลผลลัพธ์ หนึ่งร้อยยี่สิบสามบาทถ้วน
+ echo \oho60\number\Number::widget(['type'=>'thaiBaht','number'=>'123'])	=หนึ่งร้อยยี่สิบสามบาทถ้วน
+ echo \oho60\number\Number::widget(['type'=>'thaiBaht','number'=>'1897220.89'])	=หนึ่งล้านแปดแสนเก้าหมื่นเจ็ดพันสองร้อยยี่สิบบาทแปดสิบเก้าสตางค์
+ echo \oho60\number\Number::widget(['type'=>'thaiBaht','number'=>'189722000.20'])=หนึ่งร้อยแปดสิบเก้าล้านเจ็ดแสนสองหมื่นสองพันบาทยี่สิบสตางค์
 ```
