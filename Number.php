@@ -1,26 +1,30 @@
 <?php
-
-
 namespace oho60\number;
 
- /* @common
- 'components' => [
- 'Number'=>[
-    				'class'=>'common\widgets\Booster',
-    		],
-			}
-			$string_n=Yii::$app->Number->bahtThai(number_format(1234, 2, '.', ''));
+ /* 
+  * echo \oho60\number\Number::widget(['type'=>'thaiBaht','number'=>'123']);
  */
 class Number extends \yii\bootstrap\Widget
 {
-
+	public $type='thaiBaht';
+	public $number=0;
+	
     public function init(){
         parent::init();
 
     }
 	 public function run()
     {
-        return "Hello!";
+    	switch ($this->type) {
+    		case 'thaiBaht':
+    			if($this->validate_numeric($this->number)){
+    				return $this->bahtThai(number_format($this->number, 2, '.', '') );
+    			}
+    			return 0;
+    		break;
+    		default:
+    			return 0;	
+    	}
     }
     public function bahtThai($thb) {
   	 	list($thb, $ths) = explode('.', $thb);
@@ -90,7 +94,7 @@ class Number extends \yii\bootstrap\Widget
 	   return $THB.$THS;
 
   }
-  function bahtThaix($number){
+  function bahtThaiA($number){
   	$txtnum1 = array('ศูนย์','หนึ่ง','สอง','สาม','สี่','ห้า','หก','เจ็ด','แปด','เก้า','สิบ');
   	$txtnum2 = array('','สิบ','ร้อย','พัน','หมื่น','แสน','ล้าน','สิบ','ร้อย','พัน','หมื่น','แสน','ล้าน');
   	$number = str_replace(",","",$number);
@@ -136,6 +140,10 @@ class Number extends \yii\bootstrap\Widget
   		$convert .= 'สตางค์';
   	}
   	return $convert;
+  }
+  /* numeric, decimal passes */
+  function validate_numeric($variable) {
+  	return is_numeric($variable);
   }
   /*
    * ดึงตัวแปรจาห string รูปแกบบการ ดึง
