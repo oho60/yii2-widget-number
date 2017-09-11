@@ -1,5 +1,5 @@
 <?php
-namespace oho60\number;
+namespace oho\number;
 
  /* 
   * echo \oho60\number\Number::widget(['type'=>'thaiBaht','number'=>'123']);
